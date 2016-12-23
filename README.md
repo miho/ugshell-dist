@@ -30,4 +30,25 @@ Navigate to the [Gradle](http://www.gradle.org/) project (e.g., `path/to/ugshell
 
     gradlew assemble
     
-    
+### Distribution Layout
+
+Distributions layout looks as follows:
+```
+.
+└── ug
+    ├── bin
+    │   ├── plugins
+    │   └── ugshell
+    └── ugcore
+        └── scripts
+            ├── deprecated
+            ├── scripts.doxygen
+            ├── shell
+            ├── solver_util
+            ├── tools
+            ├── ug_util.lua
+            └── util
+```
+Distributions are are packaged as `ug.zip`. The locations for distributions are:
+
+
