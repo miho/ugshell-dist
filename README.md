@@ -11,6 +11,7 @@ Bintray distribution infrastructure for ug4
 - Java >= 1.8
 - Internet connection (dependencies are downloaded automatically)
 - IDE: [Gradle](http://www.gradle.org/) Plugin (not necessary for command line usage)
+- local ugshell executable and lua scripts that shall be added to the distribution
 
 ### IDE
 
@@ -28,3 +29,5 @@ Navigate to the [Gradle](http://www.gradle.org/) project (e.g., `path/to/ugshell
 #### Windows (CMD)
 
     gradlew assemble
+    
+    
