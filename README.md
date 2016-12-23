@@ -67,7 +67,7 @@ Distributions are are packaged as `ug.zip`. The locations for distributions are:
                             ├── osx
                             │   └── ug.zip
                             └── windows
-                                └── x64
+                                |── x64
                                 |   └── ug.zip
                                 └── x86
                                     └── ug.zip
