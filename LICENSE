@@ -1,4 +1,6 @@
-This project provides a precompiled version of UG4 with some additional functionality for unpacking UG4 distributions to a specified location. It is distributed under the same license as UG4.
+This project provides a precompiled version of UG4 with some additional functionality 
+for unpacking UG4 distributions to a specified location. It is distributed under the
+same license as UG4.
 
 UG4 - Unstructured Grids 4
 Copyright 2009-2016 Goethe Center for Scientific Computing, University Frankfurt
