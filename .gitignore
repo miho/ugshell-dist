@@ -1,3 +1,5 @@
 /.nb-gradle/
 /build/
 /.gradle/
+# build info
+/src/main/resources/eu/mihosoft/ugshell/ugdist/BuildInfo.java
