@@ -32,6 +32,7 @@ Date buildTimeAndDate = new Date()
 ext {
     buildDate = new java.text.SimpleDateFormat('yyyy-MM-dd').format(buildTimeAndDate)
     buildTime = new java.text.SimpleDateFormat('HH:mm:ss.SSSZ').format(buildTimeAndDate)
+    timestamp = buildTimeAndDate
 }
 
 jar {
