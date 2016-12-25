@@ -1,5 +1,5 @@
 plugins {
-//    id 'com.github.hierynomus.license' version '0.13.1'
+    //    id 'com.github.hierynomus.license' version '0.13.1'
     id 'maven-publish'
     id 'net.nemerosa.versioning' version '2.4.0'
     id 'com.jfrog.bintray' version '1.7.2'
@@ -28,3 +28,20 @@ dependencies {
 tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
 }
+
+task writeBuildInfo() {
+    // write build info to build.properties in resource folder
+    def buildInfoCode = new File(project.rootDir,
+     "src/main/resources/eu/mihosoft/ugshell/ugdist/BuildInfo.java")
+    buildInfoCode.write("package eu.mihosoft.ugshell.ugdist;\n"
+        +"public class BuildInfo {\n"
+        +"  public static final String VERSION =\"${project.version}\";\n"
+        +"  public static final String DATE =\"${project.buildDate}\";\n"
+        +"  public static final String TIME =\"${project.buildTime}\";\n"
+        +"  public static final String REV =\"${versioning.info.commit}\";\n"
+        +"}\n"
+    )
+}
+
+compileJava.dependsOn(writeBuildInfo)
+
