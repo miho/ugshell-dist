@@ -37,7 +37,7 @@ task writeBuildInfo() {
     buildInfoCode.write("package eu.mihosoft.ugshell.ugdist;\n"
         +"public class BuildInfo {\n"
         +"  public static final String VERSION =\"${project.version}\";\n"
-        +"  public static final String TIMESTAMP =\"${project.timestamp}\";\n"
+        +"  public static final String TIMESTAMP =\"${project.buildTimestamp}\";\n"
         +"  public static final String REV =\"${versioning.info.commit}\";\n"
         +"}\n"
     )
