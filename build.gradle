@@ -33,6 +33,7 @@ task writeBuildInfo() {
     // write build info to build.properties in resource folder
     def buildInfoCode = new File(project.rootDir,
      "src/main/resources/eu/mihosoft/ugshell/ugdist/BuildInfo.java")
+    buildInfoCode.getParentFile().mkdirs();
     buildInfoCode.write("package eu.mihosoft.ugshell.ugdist;\n"
         +"public class BuildInfo {\n"
         +"  public static final String VERSION =\"${project.version}\";\n"
