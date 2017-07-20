@@ -4,9 +4,10 @@
 /.gradle/
 
 # native code
-/src/main/src/eu/mihosoft/ugshell/ugdist/linux/
-/src/main/src/eu/mihosoft/ugshell/ugdist/osx/
-/src/main/src/eu/mihosoft/ugshell/ugdist/windows/
+/src/main/resources/eu/mihosoft/ugshell/ugdist/linux/
+/src/main/resources/eu/mihosoft/ugshell/ugdist/osx/
+/src/main/resources/eu/mihosoft/ugshell/ugdist/windows/
 
 # build info
-/src/main/src/eu/mihosoft/ugshell/ugdist/BuildInfo.java
+/src/main/java/eu/mihosoft/ugshell/ugdist/BuildInfo.java
+
