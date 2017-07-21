@@ -47,7 +47,11 @@ Distributions layout looks as follows:
             ├── solver_util
             ├── tools
             ├── ug_util.lua
-            └── util
+            ├── util
+            ├── LICENSE
+            ├── README.md
+            └── README.txt
+            
 ```
 Distributions are are packaged as `ug.zip`. The locations for distributions are:
 ```
